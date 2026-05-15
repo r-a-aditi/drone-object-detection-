@@ -32,14 +32,7 @@ Drone/aerial imagery with 10 object classes across train, val, and test-dev spli
 - **Framework:** Ultralytics YOLOv8
 
 ---
-
-## Setup & Usage
-
-This project runs on **Google Colab**. To reproduce:
-
-1. Upload the dataset to Google Drive under `MyDrive/VisDrone/VisDrone_Dataset/`
-2. Open the notebook in Colab
-3. Run all cells in order to mount google drive and run the model
+Notebook made in kaggle notebook after facing GPU limits in Colab
 
 **Key libraries include:**
 
@@ -110,7 +103,7 @@ All outputs are saved to `outputs/` and in Google Drive:
 - **Dense crowds** — heavy overlap between pedestrians causes missed detections
 - **Class imbalance** — pedestrian and people classes dominate; rarer classes
   like tricycle and awning-tricycle have lower AP
-- **Colab constraints** — batch size and epoch limited due to Colab GPU limits.
+- **GPU constraints** — batch size and epoch limited due to Colab GPU limits. Shifted to Kaggle notebook.
 
 ---
 
