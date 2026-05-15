@@ -27,7 +27,7 @@ Drone/aerial imagery with 10 object classes across train, val, and test-dev spli
 ## Model: YOLOv8s
 
 - **Input size:** 1280×1280
-- **Epochs:** 50 (with early stopping, patience=15)
+- **Epochs:** 20 (Reduced from 50 to 20 due considering GPU limits and deadline)
 - **Batch size:** 4 (Due to memory limit)
 - **Framework:** Ultralytics YOLOv8
 
