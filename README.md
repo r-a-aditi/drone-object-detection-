@@ -124,6 +124,12 @@ All outputs are saved to `outputs/` and in Google Drive:
 - **Fix class imbalance** — some classes appear rarely in the dataset;
   giving them more weight during training would improve their detection
 
+## Kaggle Notebook
+
+For better reproducibility and execution, the full project implementation is available on Kaggle:
+
+[View notebook](https://www.kaggle.com/code/ramisaanjumaditi/drone-image-detection)
+
 ## Acknowledgements
 - [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset)
 - AI tools used for implementation assistance: Gemini in colab, Claude (Anthropic) 
