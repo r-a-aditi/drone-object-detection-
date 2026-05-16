@@ -54,7 +54,7 @@ Notebook made in kaggle notebook after facing GPU limits in Colab
 ### Task 02 — Model Training
 - Fine-tuned YOLOv8s on VisDrone training set
 - Used image size 1280 to preserve detail for small objects
-- Training outputs saved to Google Drive (`outputs/yolov8s_visdrone/`)
+- Training weights best.pt saved locally
 
 ### Task 03 — Detection & Human Counting
 - Runs inference on test-dev images at `conf=0.25`
@@ -92,7 +92,7 @@ All outputs are saved to `outputs/` and in Google Drive:
 
 ## Demo Video
 
-[▶ Watch Demo on Google Drive](#link) 
+[▶ Watch Demo on Google Drive](#[link](https://drive.google.com/drive/folders/14iV1uhNcPn4yluuSgAQCVayEim5rn9tJ?usp=sharing)) 
 
 ---
 
@@ -107,16 +107,22 @@ All outputs are saved to `outputs/` and in Google Drive:
 
 ---
 
-## Results
-
+## Evaluation Metrics
 | Metric | Value |
 |--------|-------|
-| mAP@0.5 | *( output)* |
-| mAP@0.5:0.95 | *(  output)* |
-| Precision | *(  output)* |
-| Recall | *(   output)* |
+| mAP@0.5 | 0.4253 |
+| mAP@0.5:0.95 | 0.2762 |
+| Precision | 0.6393 |
+| Recall | 0.4985 |
 
----
+## Improvement Suggestions
+
+- **Train longer** — only 20 epochs were used due to compute limits; more epochs
+  would meaningfully improve accuracy
+- **Use a bigger model** — YOLOv8m or YOLOv8l instead of YOLOv8s would detect
+  small and crowded objects better
+- **Fix class imbalance** — some classes appear rarely in the dataset;
+  giving them more weight during training would improve their detection
 
 ## Acknowledgements
 - [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset)
