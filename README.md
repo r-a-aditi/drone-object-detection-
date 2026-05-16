@@ -92,7 +92,7 @@ All outputs are saved to `outputs/` and in Google Drive:
 
 ## Demo Video
 
-[▶ Watch Demo on Google Drive](#[link](https://drive.google.com/drive/folders/14iV1uhNcPn4yluuSgAQCVayEim5rn9tJ?usp=sharing)) 
+[▶ Watch Demo on Google Drive](https://drive.google.com/drive/folders/14iV1uhNcPn4yluuSgAQCVayEim5rn9tJ?usp=sharing) 
 
 ---
 
