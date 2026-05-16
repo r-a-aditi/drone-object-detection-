@@ -1,5 +1,5 @@
-# drone-object-detection-
-## Antlings Internship – AI/ML Technical Assessment
+# drone-object-detection
+## Antlings Internship - AI/ML Technical Assessment
 
 A computer vision pipeline built on the VisDrone dataset to detect humans and
 cars from aerial imagery, count humans, and visualize results
@@ -46,28 +46,28 @@ Notebook made in kaggle notebook after facing GPU limits in Colab
 
 ## Pipeline Overview
 
-### Task 01 — Dataset Understanding & Preprocessing
+### Task 01 - Dataset Understanding & Preprocessing
 - Explored dataset structure across train/val/test splits
 - Visualized class distribution, sample annotations, and bounding box sizes
 - Noted challenges: small object sizes and dense crowds
 
-### Task 02 — Model Training
+### Task 02 - Model Training
 - Fine-tuned YOLOv8s on VisDrone training set
 - Used image size 1280 to preserve detail for small objects
 - Training weights best.pt saved locally
 
-### Task 03 — Detection & Human Counting
+### Task 03 - Detection & Human Counting
 - Runs inference on test-dev images at `conf=0.25`
 - Draws color-coded bounding boxes 
 - Overlays human and vehicle count on each image
 - Prints total and average counts across the full test set
 
-### Task 04 — Tracking
+### Task 04 - Tracking
 - ByteTrack implementation included in notebook
 - Builds a video from test frames, runs `model.track()` with persistent IDs
 - Plots human count per frame over time
 
-### Task 05 — Evaluation
+### Task 05 - Evaluation
 - Ran `model.val()` on validation set
 - Computed mAP@0.5, mAP@0.5:0.95, Precision, Recall
 - Plotted per-class AP@0.5 bar chart
